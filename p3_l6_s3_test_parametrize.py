@@ -25,5 +25,4 @@ def test_answer(browser, link):
 
     feedback = browser.find_element(By.CLASS_NAME, 'smart-hints__hint').text
 
-    text_for_answer = ""
     assert feedback == 'Correct!', 'Isn\'t correct'
