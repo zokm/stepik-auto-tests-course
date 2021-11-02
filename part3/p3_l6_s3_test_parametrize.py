@@ -2,14 +2,6 @@ import pytest
 import time
 import math
 from selenium.webdriver.common.by import By
-from selenium import webdriver
-
-
-@pytest.fixture(scope="function")
-def browser():
-    driver = webdriver.Chrome()
-    yield driver
-    driver.quit()
 
 
 @pytest.mark.parametrize('link', ["236895", "236896", "236897", "236898", "236899", "236903", "236904", "236905"])
